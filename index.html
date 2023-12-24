@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="template.css" rel="stylesheet">
+    <title>Imam-Hafsin-model-International-School</title>
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.993);
+  padding-top: 0;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom styles */
+    .carousel-card {
+        position: absolute;
+        top: 45%;
+        right: 25%;
+        width: 400px;
+        transform: translateY(-50%);
+        opacity: 0.7;
+        height:200px;
+        color:#fff;
+        transition: width 0.5s, height 0.5s;
+      }
+
+      .transparent-card {
+        background-color: rgba(185, 183, 221, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        width: 600px;
+        height:300px;
+        transition: width 0.5s, height 0.5s;
+        justify-content: center;
+      }
+
+      @media (max-width: 768px) {
+        .carousel-card {
+          width: 60%;
+          right: 20%;
+          height:50%;
+        }
+      }
+    
+      @media (max-width: 768px) {
+        .transparent-card {
+          top:0%;
+          width: 100%;
+          right: 20%;
+          height:65%;
+        }
+      }
+    
+    
+    /* Add this CSS to hide the caret */
+.dropdown-toggle-no-caret::after {
+  display: none;
+}
+.sub-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.nav-item:hover .sub-links {
+  display: block;
+}
+
+.sub-link {
+  display: block;
+  padding: 5px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-link:hover {
+  color: #555;
+}
+
+.admission-img {
+  width: 420px;
+  height:34vh;
+  border-radius: 10px;
+  border: 6px solid #fff;
+  position: absolute;
+  left: -40px;
+}
+.learning-img{
+  height:300px;
+}
+.testimonials .testimonial-wrap {
+  padding-left: 50px;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px 30px 30px 60px;
+  margin: 30px 15px;
+  min-height: 200px;
+  border: 1px solid #eef0ef;
+  position: relative;
+  background: #fff;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #530808;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+  
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 15px auto 15px auto;
+}
+
+.testimonials .carousel-inner {
+  border-radius: 10px;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar bg-secondary">
+    <div class="container-fluid">
+      <div id="navbar-menu" class="collapse navbar-collapse">
+        <h5 class="text-light ml-1">Imam Hafsin Model International School Kano</h5>
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">School Portal</a></li>
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">PTA</a></li>
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">Staff Portal</a></li>
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar bg-white">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand text-dark">IHMIS</a>
+      <button type="button" class="navbar-toggler" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-menu" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="navbar-toggler-icon bg-light text-dark w-100 pt-1">Menu</span>
+      </button>
+      <div id="navbar-menu" class="collapse navbar-collapse">
+        <div id="navbar-menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown ml-5">
+              <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="template.html">Sublink 1</a>
+                <a class="dropdown-item" href="template.html">Sublink 2</a>
+                <!-- Add more dropdown items related to 'Home' -->
+              </div>
+            </li>
+              <li class="nav-item dropdown ml-5">
+                <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="template.html">Sublink 1</a>
+                  <a class="dropdown-item" href="template.html">Sublink 2</a>
+                  <!-- Add more dropdown items related to 'Home' -->
+                </div>
+              </li>
+
+            <li class="nav-item dropdown ml-5">
+              <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">School</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="template.html">Sublink 1</a>
+                <a class="dropdown-item" href="template.html">Sublink 2</a>
+                <!-- Add more dropdown items related to 'Home' -->
+              </div>
+            </li>
+            
+          <li class="nav-item"><a class="nav-link ml-5" href="template.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link ml-5" href="template.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link ml-5" href="template.html">News & Feeds</a></li>
+          <li class="nav-item"><a class="nav-link ml-5" href="template.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container-fluid bg-light">
+    <div id="carouselIClass" class="carousel slide " data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIClass" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIClass" data-slide-to="1"></li>
+        <li data-target="#carouselIClass" data-slide-to="2"></li>
+        <li data-target="#carouselIClass" data-slide-to="3"></li>
+        <!-- Add more carousel indicators -->
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="students.jfif" class="d-block w-100" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Add relevant captions or text here -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="team.jfif" class="d-block w-100" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Add relevant captions or text here -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="team.jfif" class="d-block w-100" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Add relevant captions or text here -->
+          </div>
+        </div><div class="carousel-item">
+          <img src="team.jfif" class="d-block w-100" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Add relevant captions or text here -->
+          </div>
+        </div>
+        <!-- Add more carousel items -->
+      </div>
+    </div>
+    
+    <!-- Transparent Cards -->
+    <div class="carousel-card" id="card1">
+      <div class="card transparent-card">
+        <h5>Give your Child a Solid Educational Foundation</h5>
+        <p>Every child deserves a quality education in their formative years.</p>
+      </div>
+    </div>
+    
+    <div class="carousel-card" id="card2">
+      <div class="card transparent-card">
+        <h5>We Ensure Comprehensive Support Throughout Your Child's Early Education</h5>
+        <p>Every child deserves a well-rounded education and training during their elementary years.</p>
+      </div>
+    </div>
+    
+    <div class="carousel-card" id="card3">
+      <div class="card transparent-card">
+        <h5>Nurturing Future Leaders with a Strong Educational Framework</h5>
+        <p>Every child needs a quality and robust education to become a good ambassador for the future.</p>
+      </div>
+    </div>
+    
+    <div class="carousel-card" id="card4">
+      <div class="card transparent-card">
+        <h5>Guiding Students to Top Higher Institutions Worldwide</h5>
+        <p>Discover how our teachers elevate students to these prestigious institutions.</p>
+      </div>
+    </div>
+  </div>
+  <br> <br>
+  <div class="container-fluid admission text-dark bg-secondary">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="students.jfif" class="admission-img" alt="Client 1">
+        </div>
+        <div class="col-md-6 text-center ml-5 text-light">
+            <h4>Apply For Admission</h4>
+      
+            <p>
+              Welcome to our esteemed school! We are committed to fostering an environment that nurtures growth, excellence, and a love for learning. Join us in crafting a brighter future for your child and experience an educational journey that cultivates curiosity, critical thinking, and success.
+          </p>
+        <button type="button" class="btn btn-dark text-light mt-4">Apply Online</button>
+        <button type="button" class="btn btn-dark text-light  mt-4">Download Form</button>
+        <button type="button" class="btn btn-dark text-light mt-4">Arrange a Visit</button>
+    </div>
+    </div>
+  </div>
+  <br><br>
+<div class="container-fluid bg-light mt-auto">
+  <div class="container text-center">
+    <h3>Redifining Education In Africa</h3>
+    <hr>
+    <p>
+      Imam Hafsin Model International School in Kano stands at the forefront of reshaping education in Africa. Our mission is to lead with a holistic, inclusive, and innovative world-class education paradigm within Kano and beyond. We have embraced distinctive methodologies and tools to create an engaging learning experience for our students, including hands-on computer practicals and activity-based learning, fostering critical thinking as a fundamental aspect of our educational approach.
+    </p>
+    <p>Renowned locally for our twenty-first-century learning environment and unique teaching methodologies, we are esteemed as a leading school in Kano, setting the standard for educational excellence in the region.</p>
+  </div>
+</div>
+<br><br>
+<div class="container-fluid text-dark bg-secondary">
+  <h3 class="text-center">Featured Programs</h3>
+  <div class="row activity mt-auto">
+      <div class="col-md-3">
+          <h5 class="text-center">ICT Practical Skills</h5>
+          <img src="course-2.jpeg" class="learning-img w-100" alt="">
+          <p>At our school, ICT practical sessions are dynamic and hands-on, geared toward equipping students with essential digital skills. These sessions focus on leveraging technology to enhance learning across various subjects. From coding workshops to multimedia design projects, students engage in interactive lessons that not only build technical expertise but also nurture creativity and innovation.</p>
+      </div>
+      <div class="col-md-3">
+          <h5 class="text-center">Clubs and Societies</h5>
+          <img src="hero-bg.jpg" class="learning-img w-100" alt="">
+          <p>Our school's clubs and societies provide students with diverse avenues to explore their passions beyond the classroom. Whether it's academic pursuits like debate or robotics clubs, or interest-driven activities like music, art, or environmental clubs, these groups foster teamwork, leadership, and skill development. Through events, competitions, and community initiatives, students actively contribute to their interests and the school community.</p>
+      </div>
+      <div class="col-md-3">
+          <h5 class="text-center">Activity Based Learning</h5>
+          <img src="event.jpg" class="learning-img w-100" alt="">
+          <p>Activity-based learning is integral to our teaching approach. Students actively participate in experiments, projects, and real-world simulations across subjects. Whether it's conducting science experiments, historical reenactments, or engaging in outdoor learning experiences, these activities promote critical thinking and the practical application of knowledge, encouraging a deeper understanding of concepts.</p>
+      </div>
+      <div class="col-md-3">
+          <h5 class="text-center">Thinking School</h5>
+          <img src="about2.jpg" class="learning-img w-100" alt="">
+          <p>Our school embraces a thinking school approach, prioritizing the development of strong thinking skills and metacognition. Our curriculum encourages inquiry-based learning, problem-solving, and reflection. Through techniques such as Socratic discussions, project-based learning, and critical analysis exercises, we aim to spark curiosity and foster the ability to think critically and creatively in our students.</p>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid text-dark bg-light">
+  <h3 class="text-center">Success Highlights <br>Celebrating Achievements</h3>
+  <hr>
+  <div class="row activity mt-auto">
+      <div class="col-md-3">
+          <h5 class="text-center">Tech Innovator Prize</h5>
+          <img src="SS.jpg" class="learning-img w-100" alt="">
+          <p>Congratulations to [Student's Name] for winning the prestigious Tech Innovator Prize in recognition of outstanding performance in our ICT practical sessions. Their dedication to mastering technology and innovative approaches in coding and multimedia design is truly commendable.</p>
+      </div>
+      <div class="col-md-3">
+          <h5 class="text-center">Community Engagement Trophy</h5>
+          <img src="auwal1.jfif" class="learning-img w-100" alt="">
+          <p>We proudly celebrate Mr. Auwal Muhammad for receiving the Community Engagement Trophy for exemplary leadership in our school's clubs and societies. Their guidance has led to remarkable growth and success, enabling students to excel in teamwork, leadership, and skill development.</p>
+      </div>
+      <div class="col-md-3">
+          <h5 class="text-center">Innovative Thinker Prize</h5>
+          <img src="trainer-1.jpg" class="learning-img w-100" alt="">
+          <p>Join us in applauding [Student's Name] for securing the Innovative Thinker Prize for exceptional participation and achievements in our hands-on learning experiences. Their engagement in experiments, projects, and simulations has significantly enhanced critical thinking and practical knowledge application.</p>
+      </div>
+      <div class="col-md-3">
+          <h5 class="text-center">Inquiry Trailblazer Trophy</h5>
+          <img src="testimonials-3.jpg" class="learning-img w-100" alt="">
+          <p>Congratulations to [Student's Name] for being recognized with the Inquiry Trailblazer Trophy in our thinking school approach. Their exceptional critical thinking skills and metacognition reflect the success of our innovative teaching methods, empowering students to excel in inquiry-based learning and reflection.</p>
+      </div>
+  </div>
+</div>
+
+<br><br>
+<section id="testimonials" class="testimonials">
+  <div class="container bg-light" data-aos="fade-up">
+      <div class="section-title mb-2 text-center">
+          <h2 class="text-dark">Parent Testimonials</h2>
+          <p class="text-dark">What parents say about us</p>
+          <hr>
+      </div>
+
+      <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#testimonial-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#testimonial-slider" data-slide-to="1"></li>
+              <li data-target="#testimonial-slider" data-slide-to="2"></li>
+              <li data-target="#testimonial-slider" data-slide-to="3"></li>
+              <li data-target="#testimonial-slider" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner bg-light text-center text-italic">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active">
+                  <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              "Our experience with Imam Hafsin model International School has been incredible. The dedication of the teachers and the supportive environment have truly made a positive impact on our child's growth. We've seen remarkable progress academically and personally."
+                              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="carousel-item">
+                  <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              "Choosing Imam Hafsin model International School for our child was the best decision. The holistic approach to education and the emphasis on individual development are commendable. The school's efforts in nurturing a well-rounded personality are impressive."
+                              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="carousel-item">
+                  <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              "We are amazed by the positive atmosphere at Imam Hafsin model International School . The encouragement and support our child receives have significantly boosted their confidence. The focus on both academics and personal growth is commendable."
+                              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="carousel-item">
+                  <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              "The commitment of the staff at Imam Hafsin model International School  to the well-being and education of students is exemplary. The progress our child has made under their guidance is truly remarkable. Thank you for providing a nurturing environment."
+                              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="carousel-item">
+                  <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              "We appreciate the innovative teaching methods at Imam Hafsin model International School . The school's commitment to fostering a love for learning and encouraging curiosity is evident. Our child looks forward to going to school every day."
+                              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Add more testimonials following the same structure -->
+
+          </div><!-- End of carousel-inner -->
+      </div><!-- End of testimonial-slider -->
+  </div><!-- End of container -->
+</section><!-- End of Testimonials Section -->
+<br><br>
+
+<footer class="bg-light text-dark py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>About Us</h5>
+              <p>Welcome to Imam Hafsin Model International School, a beacon of academic excellence committed to nurturing young minds and fostering holistic development.</p>
+              <p>Contact Us:<br>
+                  123 School Street, Kano, Nigeria<br>
+                  Phone: 0803XXXXXX<br>
+                  Email: info@imamhafsinmodelschool.com</p>
+          </div>
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a class="text-dark" href="#home">Home</a></li>
+                  <li><a class="text-dark" href="#about">About Us</a></li>
+                  <li><a class="text-dark" href="#academics">Academics</a></li>
+                  <li><a class="text-dark" href="#admissions">Admissions</a></li>
+                  <li><a class="text-dark" href="#events">Events</a></li>
+                  <li><a class="text-dark" href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h5>Explore Our Programs</h5>
+              <div class="row">
+                  <div class="col">
+                      <ul class="list-unstyled">
+                          <li><a class="text-dark" href="#primary">Primary Education</a></li>
+                          <li><a class="text-dark" href="#primary">Islamiyya Education</a></li>
+                          <li><a class="text-dark" href="#primary">Tahfiz Education</a></li>
+                          <li><a class="text-dark" href="#secondary">Secondary Education</a></li>
+                          <li><a class="text-dark" href="#extra">Extra-curricular Activities</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <ul class="list-unstyled">
+                          <li><a class="text-dark" href="#facilities">Facilities</a></li>
+                          <li><a class="text-dark" href="#gallery">Gallery</a></li>
+                          <li><a class="text-dark" href="#blog">School Blog</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <form action="#" method="post" class="newsletter-form">
+                  <h5>Newsletter</h5>
+                  <div class="input-group mb-3">
+                      <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                          <button class="btn btn-secondary" type="submit" id="button-addon2">Subscribe</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col-md-6 ml-1">
+              <p>&copy; 2023 Imam Hafsin Model International School</p>
+          </div>
+          <div class="col-lg text-center">
+              <a href="https://www.facebook.com/" target="_blank" class="social-link"><i class="fab fa-facebook-square fa-2x mr-3 text-dark"></i></a>
+              <a href="https://twitter.com/" target="_blank" class="social-link"><i class="fab fa-twitter-square fa-2x mr-3 text-dark"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" class="social-link"><i class="fab fa-instagram-square fa-2x mr-3 text-dark"></i></a>
+              <a href="https://web.whatsapp.com/" target="_blank" class="social-link"><i class="fab fa-whatsapp-square fa-2x mr-3 text-dark"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Initialize Carousel -->
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-toggle-no-caret').mouseenter(function() {
+      $(this).siblings('.dropdown-menu').slideDown('fast');
+    });
+
+    $('.dropdown-toggle-no-caret').mouseleave(function() {
+      $(this).siblings('.dropdown-menu').slideUp('fast');
+    });
+
+    $('.dropdown-menu').mouseleave(function() {
+      $(this).slideUp('fast');
+    });
+  });
+
+      // Activate Carousel
+      $("#carouselIClass").carousel();
+
+      // Display the card associated with the active carousel item after a delay
+      $("#carouselIClass").on('slid.bs.carousel', function () {
+        var activeIndex = $(".carousel-item.active").index() + 1; // Get the index of active carousel item
+        $(".carousel-card").hide(); // Hide all cards
+
+        // Show the corresponding card after a delay
+        setTimeout(function() {
+          $("#card" + activeIndex).show();
+        }, 1000); // Adjust the delay time in milliseconds (1000ms = 1 second)
+      });
+  </script>
+</body>
+</html>
