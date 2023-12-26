@@ -45,7 +45,11 @@ body {
         color:#fff;
         transition: width 0.5s, height 0.5s;
       }
-
+      .navbar-brand img{
+        width:15%;
+        height:15%;
+        border-radius: 50%;
+      }
       .transparent-card {
         background-color: rgba(185, 183, 221, 0.7);
         padding: 20px;
@@ -172,6 +176,25 @@ body {
   border-radius: 10px;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(210, 210, 233);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+
   </style>
 </head>
 <body>
@@ -179,10 +202,10 @@ body {
   <nav class="navbar navbar-expand-lg navbar bg-secondary">
  
     <div class="container-fluid">
-      <div class="collapse navbar-collapse">
-        <h5 class="text-light ml-1">Imam Hafsin Model International School Kano</h5>
-        <ul class="navbar-nav ml-5">
-          <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">School Portal</a></li>
+      <div  class="collapse navbar-collapse">
+        <a href="index.html" class="navbar-brand text-dark">IHMIS</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link ml-5 text-light" href="index.html">School Portal</a></li>
           <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">PTA</a></li>
           <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link ml-5 text-light" href="template.html">FAQs</a></li>
@@ -194,39 +217,39 @@ body {
   </nav>
   <nav class="navbar navbar-expand-lg navbar bg-white">
     <div class="container-fluid">
-      <a href="/" class="navbar-brand text-dark">IHMIS</a>
+      <a href="index.html" class="navbar-brand text-dark"><img src="ihlogo.jfif" alt=""></a>
       <button type="button" class="navbar-toggler" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-menu" data-toggle="collapse" data-target="#navbar-menu">
         <span class="navbar-toggler-icon bg-light text-dark w-100 pt-1">Menu</span>
       </button>
       <div id="navbar-menu" class="collapse navbar-collapse">
         <div id="navbar-menu" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown ml-5">
-              <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <a class="dropdown-item" href="template.html">Sublink 1</a>
-                <a class="dropdown-item" href="template.html">Sublink 2</a>
-                <!-- Add more dropdown items related to 'Home' -->
-              </div>
-            </li>
+            <li class="nav-item"><a class="nav-link ml-5" href="index.html">Home</a></li>
               <li class="nav-item dropdown ml-5">
                 <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                  <a class="dropdown-item" href="template.html">Sublink 1</a>
-                  <a class="dropdown-item" href="template.html">Sublink 2</a>
+                <div class="dropdown-menu  bg-secondary" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="#">History</a>
+                  <a class="dropdown-item" href="#">Board of Directors</a>
+                  <a class="dropdown-item" href="template.html">Head of Schools</a>
+                  <a class="dropdown-item" href="#">Accredition</a>
                   <!-- Add more dropdown items related to 'Home' -->
                 </div>
               </li>
 
             <li class="nav-item dropdown ml-5">
               <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">School</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <a class="dropdown-item" href="template.html">Sublink 1</a>
-                <a class="dropdown-item" href="template.html">Sublink 2</a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="template.html">Play Group</a>
+                <a class="dropdown-item" href="template.html">Nursery</a>
+                <a class="dropdown-item" href="template.html">Primary</a>
+                <a class="dropdown-item" href="template.html">Secondary</a>
+                <a class="dropdown-item" href="template.html">Tahfiz</a>
+                <a class="dropdown-item" href="template.html">Islamiyya</a>
+
+
                 <!-- Add more dropdown items related to 'Home' -->
               </div>
-            </li>
-            
+            </li>   
           <li class="nav-item"><a class="nav-link ml-5" href="template.html">Admissions</a></li>
           <li class="nav-item"><a class="nav-link ml-5" href="template.html">Academics</a></li>
           <li class="nav-item"><a class="nav-link ml-5" href="template.html">News & Feeds</a></li>
@@ -335,22 +358,22 @@ body {
 <div class="container-fluid text-dark bg-secondary">
   <h3 class="text-center">Featured Programs</h3>
   <div class="row activity mt-auto">
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">ICT Practical Skills</h5>
           <img src="course-2.jpeg" class="learning-img w-100" alt="">
           <p>At our school, ICT practical sessions are dynamic and hands-on, geared toward equipping students with essential digital skills. These sessions focus on leveraging technology to enhance learning across various subjects. From coding workshops to multimedia design projects, students engage in interactive lessons that not only build technical expertise but also nurture creativity and innovation.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">Clubs and Societies</h5>
           <img src="hero-bg.jpg" class="learning-img w-100" alt="">
           <p>Our school's clubs and societies provide students with diverse avenues to explore their passions beyond the classroom. Whether it's academic pursuits like debate or robotics clubs, or interest-driven activities like music, art, or environmental clubs, these groups foster teamwork, leadership, and skill development. Through events, competitions, and community initiatives, students actively contribute to their interests and the school community.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">Activity Based Learning</h5>
           <img src="event.jpg" class="learning-img w-100" alt="">
           <p>Activity-based learning is integral to our teaching approach. Students actively participate in experiments, projects, and real-world simulations across subjects. Whether it's conducting science experiments, historical reenactments, or engaging in outdoor learning experiences, these activities promote critical thinking and the practical application of knowledge, encouraging a deeper understanding of concepts.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">Thinking School</h5>
           <img src="about2.jpg" class="learning-img w-100" alt="">
           <p>Our school embraces a thinking school approach, prioritizing the development of strong thinking skills and metacognition. Our curriculum encourages inquiry-based learning, problem-solving, and reflection. Through techniques such as Socratic discussions, project-based learning, and critical analysis exercises, we aim to spark curiosity and foster the ability to think critically and creatively in our students.</p>
@@ -367,17 +390,17 @@ body {
           <img src="SS.jpg" class="learning-img w-100" alt="">
           <p>Congratulations to [Student's Name] for winning the prestigious Tech Innovator Prize in recognition of outstanding performance in our ICT practical sessions. Their dedication to mastering technology and innovative approaches in coding and multimedia design is truly commendable.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">Community Engagement Trophy</h5>
           <img src="auwal1.jfif" class="learning-img w-100" alt="">
           <p>We proudly celebrate Mr. Auwal Muhammad for receiving the Community Engagement Trophy for exemplary leadership in our school's clubs and societies. Their guidance has led to remarkable growth and success, enabling students to excel in teamwork, leadership, and skill development.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">Innovative Thinker Prize</h5>
           <img src="trainer-1.jpg" class="learning-img w-100" alt="">
           <p>Join us in applauding [Student's Name] for securing the Innovative Thinker Prize for exceptional participation and achievements in our hands-on learning experiences. Their engagement in experiments, projects, and simulations has significantly enhanced critical thinking and practical knowledge application.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
           <h5 class="text-center">Inquiry Trailblazer Trophy</h5>
           <img src="testimonials-3.jpg" class="learning-img w-100" alt="">
           <p>Congratulations to [Student's Name] for being recognized with the Inquiry Trailblazer Trophy in our thinking school approach. Their exceptional critical thinking skills and metacognition reflect the success of our innovative teaching methods, empowering students to excel in inquiry-based learning and reflection.</p>
@@ -494,7 +517,12 @@ body {
                   <li><a class="text-dark" href="#academics">Academics</a></li>
                   <li><a class="text-dark" href="#admissions">Admissions</a></li>
                   <li><a class="text-dark" href="#events">Events</a></li>
+                  <li><a class="text-dark" href="#staff">Staff Portal</a></li>
+                  <li><a class="text-dark" href="#pta">PTA</a></li>
+                  <li><a class="text-dark" href="#faqs">FAQs</a></li>
+                  <li><a class="text-dark" href="#contact">School Portal</a></li>
                   <li><a class="text-dark" href="#contact">Contact</a></li>
+                  <li><a class="text-dark" href="#support">Support</a></li>
               </ul>
           </div>
           <div class="col-md-4">
@@ -551,19 +579,19 @@ body {
 
   <!-- Initialize Carousel -->
   <script>
-    $(document).ready(function(){
-      $('.dropdown-toggle-no-caret').mouseenter(function() {
-      $(this).siblings('.dropdown-menu').slideDown('fast');
-    });
-
-    $('.dropdown-toggle-no-caret').mouseleave(function() {
-      $(this).siblings('.dropdown-menu').slideUp('fast');
-    });
-
-    $('.dropdown-menu').mouseleave(function() {
-      $(this).slideUp('fast');
-    });
+   $(document).ready(function() {
+  $('.nav-item.dropdown').mouseenter(function() {
+    $(this).find('.dropdown-menu').slideDown('fast');
   });
+
+  $('.nav-item.dropdown').mouseleave(function() {
+    $(this).find('.dropdown-menu').slideUp('fast');
+  });
+
+  $('.dropdown-menu').mouseleave(function() {
+    $(this).slideUp('fast');
+  });
+});
 
       // Activate Carousel
       $("#carouselIClass").carousel();
@@ -578,6 +606,41 @@ body {
           $("#card" + activeIndex).show();
         }, 1000); // Adjust the delay time in milliseconds (1000ms = 1 second)
       });
-  </script>
+ // Get the button
+ let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+//back to top
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+} 
+// Get references to the search icon, search input, and search button elements
+const searchIcon = document.getElementById('searchIcon');
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+
+// Add an event listener to the search icon
+searchIcon.addEventListener('click', function() {
+// Toggle the 'd-none' class to show/hide the search input
+searchInput.classList.toggle('d-none');
+searchButton.classList.toggle('d-none');
+
+// Focus on the search input when it's displayed
+if (!searchInput.classList.contains('d-none')) {
+  searchInput.focus();
+}
+});
+
+</script>
 </body>
 </html>
